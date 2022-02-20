@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/andiswa-pt3/static/css/main.5e085462.css",
-    "main.js": "/andiswa-pt3/static/js/main.a34d0e7a.js",
+    "main.css": "/andiswa-pt3/static/css/main.01de34a4.css",
+    "main.js": "/andiswa-pt3/static/js/main.f35a434d.js",
     "static/js/787.21204f8c.chunk.js": "/andiswa-pt3/static/js/787.21204f8c.chunk.js",
     "static/media/Picture9.png": "/andiswa-pt3/static/media/Picture9.b38bc478853ba380731b.png",
     "static/media/Picture10.png": "/andiswa-pt3/static/media/Picture10.9c16dcd1bef492ce8cdb.png",
@@ -22,7 +22,6 @@
     "static/media/04.jpg": "/andiswa-pt3/static/media/04.87749f92e13cfae9144a.jpg",
     "static/media/08.jpg": "/andiswa-pt3/static/media/08.0e75a1ec74ccf88e8b84.jpg",
     "static/media/05.jpg": "/andiswa-pt3/static/media/05.33567182b1e28002021e.jpg",
-    "static/media/a4.mp3": "/andiswa-pt3/static/media/a4.fd75d9bd2cd7848cfe1f.mp3",
     "static/media/a10.mp3": "/andiswa-pt3/static/media/a10.84cd00eb7268ae86da99.mp3",
     "static/media/Picture7.png": "/andiswa-pt3/static/media/Picture7.1b13a833a9ad9dafb75c.png",
     "static/media/a5.mp3": "/andiswa-pt3/static/media/a5.38c859084af34d8f8c51.mp3",
@@ -33,15 +32,16 @@
     "static/media/a7.mp3": "/andiswa-pt3/static/media/a7.cfe9867323eedee86054.mp3",
     "static/media/a3.mp3": "/andiswa-pt3/static/media/a3.18fe81c88053eca2db6b.mp3",
     "static/media/09.jpg": "/andiswa-pt3/static/media/09.e01e13e6d378e7d09c89.jpg",
+    "static/media/a4.mp3": "/andiswa-pt3/static/media/a4.5d8a00ddd9c493914681.mp3",
     "static/media/01.jpg": "/andiswa-pt3/static/media/01.b0a55b04186a85394fe6.jpg",
     "static/media/Avatar.png": "/andiswa-pt3/static/media/Avatar.01842f6936c3117820fd.png",
     "index.html": "/andiswa-pt3/index.html",
-    "main.5e085462.css.map": "/andiswa-pt3/static/css/main.5e085462.css.map",
-    "main.a34d0e7a.js.map": "/andiswa-pt3/static/js/main.a34d0e7a.js.map",
+    "main.01de34a4.css.map": "/andiswa-pt3/static/css/main.01de34a4.css.map",
+    "main.f35a434d.js.map": "/andiswa-pt3/static/js/main.f35a434d.js.map",
     "787.21204f8c.chunk.js.map": "/andiswa-pt3/static/js/787.21204f8c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e085462.css",
-    "static/js/main.a34d0e7a.js"
+    "static/css/main.01de34a4.css",
+    "static/js/main.f35a434d.js"
   ]
 }
