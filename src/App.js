@@ -13,15 +13,16 @@ import pause from "./images/pause.png";
 import play from "./images/play.png";
 import audioClip from "./sounds/end.mp3";
 import introClip from "./sounds/intro.mp3";
-import a1 from "./sounds/Media1.mp3";
+import a1 from "./sounds/a1.mp3";
 import a2 from "./sounds/Media2.mp3";
-import a3 from "./sounds/Media3.mp3";
-import a4 from "./sounds/Media4.mp3";
-import a5 from "./sounds/Media5.mp3";
-import a6 from "./sounds/Media6.mp3";
-import a7 from "./sounds/Media7.mp3";
-import a8 from "./sounds/Media8.mp3";
-import a9 from "./sounds/Media9.mp3";
+import a3 from "./sounds/a3.mp3";
+import a4 from "./sounds/a4.mp3";
+import a5 from "./sounds/a5.mp3";
+import a6 from "./sounds/a6.mp3";
+import a7 from "./sounds/a7.mp3";
+import a8 from "./sounds/a8.mp3";
+import a9 from "./sounds/a9.mp3";
+import a10 from "./sounds/a10.mp3";
 import s1 from "./images/Picture1.png";
 import s2 from "./images/Picture2.png";
 import s3 from "./images/Picture3.png";
@@ -31,6 +32,7 @@ import s6 from "./images/Picture6.png";
 import s7 from "./images/Picture7.png";
 import s8 from "./images/Picture8.png";
 import s9 from "./images/Picture9.png";
+import s10 from "./images/Picture10.png";
 
 var slideIndex = 1;
 export class App extends Component {
@@ -198,6 +200,9 @@ export class App extends Component {
         <audio id="a9">
           <source src={a9} type="audio/mpeg" />
         </audio>
+        <audio id="a10">
+          <source src={a10} type="audio/mpeg" />
+        </audio>
         {/* Slideshow container */}
         <div className="phoneText">Not available on this device</div>
 
@@ -212,10 +217,10 @@ export class App extends Component {
                 {/* Intro Slide */}
                 <div className="slide fade" style={{display: "flex"}}>
                     <div className="image-container">
-                        <img className="image" src={image01}/>
+                        <img className="image" src={image01} alt="Intro page image"/>
                         <div className="avatar-container">
                           <div className="flex-row">
-                            <img className="avatar" src={avatar} onClick={() => {this.show('intro'); this.toggleSound('intro-sound'); this.hide('click1'); this.showNext();}}/>
+                            <img className="avatar" src={avatar} alt="Owl avatar" onClick={() => {this.show('intro'); this.toggleSound('intro-sound'); this.hide('click1'); this.showNext();}}/>
                             <i id="click1" class="fa fa-arrow-left">&larr;Appuie ici</i>
                           </div>
                         </div>
@@ -231,14 +236,14 @@ export class App extends Component {
                 {/* Slide 1 */}
                 <div className="slide fade">
                     <div className="image-container">
-                        <img className="image" src={image02}/>
+                        <img className="image" src={image02} alt="Intro page image"/>
                         <div className="avatar-container">
                           <div className="flex-row">
-                            <img className="avatar" src={avatar} onClick={() => {this.toggle('s1'); this.hide('click2'); this.toggleSound('a1'); this.showNext()}}/>
+                            <img className="avatar" src={avatar} alt="Owl avatar" onClick={() => {this.toggle('s1'); this.hide('click2'); this.toggleSound('a1'); this.showNext()}}/>
                             <i id="click2" class="fa fa-arrow-left">&larr;Appuie ici</i>
                           </div>
                           <p>Andiswa regarde les garçons jouer au soccer. Elle veut jouer avec eux. Elle demande si elle peut pratiquer avec eux. <span className='highlight'>L’entraîneur</span> lui dit: « À cette école, seulement les garçons jouent au soccer. »</p>
-                          <div id="s1" className="speech2">
+                          <div id="s1" className="speech2" alt="A coach">
                             l’entraîneur : une personne qui aide un joueur à se préparer pour jouer à un sport
                             <img alt='' className="popup-image" src={s1}/>
                           </div>
@@ -251,15 +256,15 @@ export class App extends Component {
                 {/* Slide 2 */}
                 <div className="slide fade">
                     <div className="image-container">
-                        <img className="image" src={image03}/>
+                        <img className="image" src={image03} alt="Intro page image"/>
                         <div className="avatar-container">
                             <div className="flex-row">
-                              <img className="avatar" src={avatar} onClick={() => {this.showNext(); this.hide('click3'); this.toggleSound('a2'); this.toggle('s2')}}/>
+                              <img className="avatar" src={avatar} alt="Owl avatar" onClick={() => {this.showNext(); this.hide('click3'); this.toggleSound('a2'); this.toggle('s2')}}/>
                               <i id="click3" class="fa fa-arrow-left">&larr;Appuie ici</i>
                             </div>
                             <p>Les garçons aussi lui disent d’aller jouer au netball. Ils disent que le netball est pour les filles et que le soccer est pour les garçons. Andiswa est fâchée. Le lendemain, l’école a un grand <span className='highlight'>match</span> de soccer.</p>
-                            <div id="s2" className="speech2">
-                              Match : une compétition entre au moins deux équipes
+                            <div id="s2" className="speech2" alt="Kids playing a soccer game">
+                              match : une compétition entre au moins deux équipes
                             <img alt='' className="popup-image" src={s2}/>
                           </div>
                         </div>
@@ -268,15 +273,15 @@ export class App extends Component {
                 {/* Slide 3 */}
                 <div className="slide fade">
                     <div className="image-container">
-                        <img className="image" src={image04}/>
+                        <img className="image" src={image04} alt="Intro page image"/>
                         <div className="avatar-container">
                             <div className="flex-row">
-                              <img className="avatar" src={avatar} onClick={() => {this.showNext(); this.hide('click4'); this.toggleSound('a3'); this.toggle('s3')}}/>
+                              <img className="avatar" src={avatar} alt="Owl avatar" onClick={() => {this.showNext(); this.hide('click4'); this.toggleSound('a3'); this.toggle('s3')}}/>
                               <i id="click4" class="fa fa-arrow-left">&larr;Appuie ici</i>
                             </div>
                             <p> L’entraîneur est <span className='highlight'>inquiet</span>. 
                             </p>
-                            <div id="s3" className="speech2">
+                            <div id="s3" className="speech2" alt="Person who is worried">
                               inquiet : épeuré
                             <img alt='' className="popup-image" src={s3}/>
                           </div>
@@ -286,16 +291,16 @@ export class App extends Component {
                 {/* Slide 4 */}
                 <div className="slide fade">
                     <div className="image-container">
-                        <img className="image" src={image04}/>
+                        <img className="image" src={image04} alt="Intro page image"/>
                         <div className="avatar-container">
                             <div className="flex-row">
-                              <img className="avatar" src={avatar} onClick={() => {this.showNext(); this.hide('click5'); this.toggleSound('a4'); this.toggle('s4')}}/>
+                              <img className="avatar" src={avatar} alt="Owl avatar" onClick={() => {this.showNext(); this.hide('click5'); this.toggleSound('a4'); this.toggle('s4')}}/>
                               <i id="click5" class="fa fa-arrow-left">&larr;Appuie ici</i>
                             </div>
                             <p>Son meilleur joueur est <span className='highlight'>malade</span> et ne peut pas jouer.
                             </p>
-                            <div id="s4" className="speech2">
-                              malade : une personne qui ne se sent pas bien 
+                            <div id="s4" className="speech2" alt="A person who is sick">
+                              malade : ne se sent pas bien
                             <img alt='' className="popup-image" src={s4}/>
                           </div>
                         </div>
@@ -304,12 +309,12 @@ export class App extends Component {
                 {/* Slide 5 */}
                 <div className="slide fade">
                     <div className="image-container">
-                        <img className="image" src={image05}/>
+                        <img className="image" src={image05} alt="Intro page image"/>
                         <div className="avatar-container">
-                            <img className="avatar" src={avatar} onClick={() => {this.showNext(); this.toggleSound('a5'); this.toggle('s5')}}/>
+                            <img className="avatar" src={avatar} alt="Owl avatar" onClick={() => {this.showNext(); this.toggleSound('a5'); this.toggle('s5')}}/>
                             <p>Andiswa court vers l’entraîneur et le <span className='highlight'>supplie</span> de la laisser jouer. L’entraîneur ne sait pas quoi faire. Finalement, il décide de laisser Andiswa se joindre à l’équipe.
                             </p>
-                            <div id="s5" className="speech2">
+                            <div id="s5" className="speech2" alt="A person who is begging">
                               elle supplie : elle insiste 
                             <img alt='' className="popup-image" src={s5}/>
                           </div>
@@ -319,12 +324,12 @@ export class App extends Component {
                 {/* Slide 6 */}
                 <div className="slide fade">
                     <div className="image-container">
-                        <img className="image" src={image06}/>
+                        <img className="image" src={image06} alt="Intro page image"/>
                         <div className="avatar-container">
-                            <img className="avatar" src={avatar}  onClick={() => {this.showNext(); this.toggleSound('a6'); this.toggle('s6')}}/>
+                            <img className="avatar" src={avatar} alt="Owl avatar"  onClick={() => {this.showNext(); this.toggleSound('a6'); this.toggle('s6')}}/>
                             <p>Le match est difficile. À <span className='highlight'>la mi-temps</span>, il n’y a pas encore de but. 
                             </p>
-                            <div id="s6" className="speech2">
+                            <div id="s6" className="speech2" alt="Half-time">
                               la mi-temps: la pause entre deux parties d’un jeu 
                             <img alt='' className="popup-image" src={s6}/>
                           </div>
@@ -334,12 +339,12 @@ export class App extends Component {
                 {/* Slide 7 */}
                 <div className="slide fade">
                     <div className="image-container">
-                        <img className="image" src={image06}/>
+                        <img className="image" src={image06} alt="Intro page image"/>
                         <div className="avatar-container">
-                            <img className="avatar" src={avatar} onClick={() => {this.showNext(); this.toggleSound('a7'); this.toggle('s7')}}/>
+                            <img className="avatar" src={avatar} alt="Owl avatar" onClick={() => {this.showNext(); this.toggleSound('a7'); this.toggle('s7')}}/>
                             <p>Pendant la deuxième période du match, un des garçons <span className='highlight'>passe</span> le ballon à Andiswa.
                             </p>
-                            <div id="s7" className="speech2">
+                            <div id="s7" className="speech2" alt="Children who are passing a ball">
                               passe: donne 
                             <img alt='' className="popup-image" src={s7}/>
                           </div>
@@ -349,13 +354,14 @@ export class App extends Component {
                 {/* Slide 8 */}
                 <div className="slide fade">
                     <div className="image-container">
-                        <img className="image" src={image07}/>
+                        <img className="image" src={image07} alt="Intro page image"/>
                         <div className="avatar-container">
-                            <img className="avatar" src={avatar} onClick={() => {this.showNext();this.toggle('s8')}}/>
+                            <img className="avatar" src={avatar} alt="Owl avatar" onClick={() => {this.showNext(); this.toggleSound('a8'); this.toggle('s8')}}/>
                             <p><span className='highlight'>Elle se déplace</span> très rapidement vers le but. 
                             </p>
-                            <div id="s8" className="speech2">
+                            <div id="s8" className="speech2" alt="A picture containing clipart, vector graphics">
                               elle se déplace : elle avance 
+                              <img alt='' className="popup-image" src={s8}/>
                           </div>
                         </div>
                     </div>
@@ -364,12 +370,12 @@ export class App extends Component {
                 {/* Slide 9 */}
                 <div className="slide fade">
                     <div className="image-container">
-                        <img className="image" src={image07}/>
+                        <img className="image" src={image07} alt="Intro page image"/>
                         <div className="avatar-container">
-                            <img className="avatar" src={avatar} onClick={() => {this.showNext(); this.toggleSound('a8'); this.toggle('s9')}}/>
+                            <img className="avatar" src={avatar} alt="Owl avatar" onClick={() => {this.showNext(); this.toggleSound('a9'); this.toggle('s9')}}/>
                             <p>Elle tire dans le ballon et compte <span className='highlight'>un but</span>. 
                             </p>
-                            <div id="s9" className="speech2">
+                            <div id="s9" className="speech2" alt="A person scoring a goal">
                               un but : mettre le ballon dans le filet
                               <img alt='' className="popup-image" src={s9}/>
                             </div>
@@ -380,14 +386,14 @@ export class App extends Component {
                 {/* Slide 10 */}
                 <div className="slide fade">
                     <div className="image-container">
-                        <img className="image" src={image08}/>
+                        <img className="image" src={image08} alt="Intro page image"/>
                         <div className="avatar-container">
-                            <img className="avatar" src={avatar} onClick={() => {this.showNext(); this.toggleSound('a9'); this.toggle('s10')}}/>
+                            <img className="avatar" src={avatar} alt="Owl avatar" onClick={() => {this.showNext(); this.toggleSound('a10'); this.toggle('s10')}}/>
                             <p><span className='highlight'>La foule</span> devient folle de joie. Depuis ce jour, les filles peuvent jouer au soccer à l’école. 
                             </p>
-                            <div id="s10" className="speech2">
+                            <div id="s10" className="speech2" alt="A group of people gathering together">
                               la foule : un groupe de personnes  
-                              <img alt='' className="popup-image" src={s9}/>
+                              <img alt='' className="popup-image" src={s10}/>
                             </div>
                         </div>
                     </div>
@@ -395,7 +401,7 @@ export class App extends Component {
                 {/* Question Slide Intro */}
                 <div className="slide fade">
                     <div className="question-prompt-container">
-                        <p>Tu as lu l’histoire « Andiswa, star du soccer ». Appuie sur le bouton vert « RECORD » et dis-moi l’histoire du début à la fin. Dis-moi tous les événements et détails dont tu te souviens. You have read the story "Andiswa, star du soccer." Press the green "RECORD" button and tell us the story from the beginning to the end. Include all the events and details that you can remember.</p>
+                        <p>Tu as lu l’histoire « Andiswa, star du soccer » Appuie sur le bouton vert « ENREGISTRER » et raconte-moi l’histoire du début à la fin. Dis-moi tous les événements et détails dont tu te souviens. You have read the story "Andiswa, star du soccer". Press the green "ENREGISTRER" button and tell us the story from the beginning to the end. Include all the events and details that you can remember.</p>
                     </div>
                     <div className="audio-controls-container">
                         <audio id="story-retel" onPlay={this.updateTime}>
@@ -408,7 +414,7 @@ export class App extends Component {
                 </div>    
                 <div className="slide fade">
                     <div className="linkContainer">
-                    <a href='https://rotman.az1.qualtrics.com/jfe/form/SV_6g5m4RpwsIrAmMe'><button className='linkBox'>Click here for comprehension test</button></a>
+                    <a href='https://rotman.az1.qualtrics.com/jfe/form/SV_brOzyPTm2Wmom3A'><button className='linkBox'>Click here for comprehension test</button></a>
                     </div>
                 </div>  
                                 {/*     
